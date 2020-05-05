@@ -10,14 +10,23 @@ import ArticleSidebar from './ArticleSidebar'
 import Comments from './Comments'
 import SearchPage from './Searchpage'
 import ProfilePage from './Profile'
+import HotTopics from './HotTopics'
+import NewPost from './NewPost'
+import Signup from './Signup'
 
 const App = () => {
   return (
     <>
+    <Route exact path="/" component={Signup} />
     <Route exact path="/" component={Sidebar} />
     <Route path="/" component={Header} />
 
      <div className="bodyContent">
+       <Route exact path="/" component={HotTopics} />
+    <Route exact path="/" component={Featured} />
+    <Route exact path="/" component={Foryou} />
+    <Route exact path="/" component={Featured} />
+    <Route exact path="/" component={Foryou} />
     <Route exact path="/" component={Featured} />
     <Route exact path="/" component={Foryou} />
     <Route exact path="/" component={Featured} />
@@ -28,6 +37,10 @@ const App = () => {
 
     <Route exact path="/Profile" component={ProfilePage}/>
     <Route exact path="/Profile" component={Sidebar} />
+    <div className="profileBody">
+    <Route exact path="/Profile" component={Featured} />
+    <Route exact path="/Profile" component={Foryou} />
+    </div>
     
    
     <div className="articleBodyContent">
@@ -41,6 +54,10 @@ const App = () => {
       <Route exact path="/Article" component={ArticleSidebar} />
       </div>
       </div>
+    </div>
+
+    <div className="publishBody">
+    <Route exact path="/Publish" component={NewPost} />
     </div>
 
     </>

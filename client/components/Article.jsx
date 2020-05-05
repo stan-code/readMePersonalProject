@@ -1,6 +1,18 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
+const data = {
+  username: 'Yippee Land'
+}
+
+// function returnUsername (props) {
+//   console.log (
+//     <h1 className="articleHeaderAccountName">{props.username}</h1>
+//   )
+// }
+
+// returnUsername()
+
 const Article = () => {
   return(
   <>
@@ -10,7 +22,7 @@ const Article = () => {
 <img src="images/dp.png" draggable="false"/>
 </Link>
 <div className="articleHeaderAccountInfo">
-<h1 className="articleHeaderAccountName">Discover World</h1>
+<h1 className="articleHeaderAccountName">Discover World</h1> 
 <h2 className="articleHeaderSubCount">25M subscribers</h2>
 </div>
 <div className="articleMeta">

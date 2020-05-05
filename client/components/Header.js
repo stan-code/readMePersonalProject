@@ -18,9 +18,11 @@ const Header = () => {
               <div className="searchButton">
                 <img src="/images/magni.png" draggable="false"/>
               </div></Link>
+              <Link to="/Publish">
               <div className="publishButton">
                 <img src="/images/upload.png" draggable="false"/>
               </div>
+              </Link>
               <div className="vl"></div>
                 <div className="notificationButton">
                   <img src="/images/read.png" draggable="false"/>

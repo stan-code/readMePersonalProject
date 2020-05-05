@@ -6,7 +6,7 @@ const Featured = () => {
     <>
     <div className="featuredContent">
     <hr className="homeHr"></hr>
-    <h1 className="sectionText">Featured Articles</h1>
+    <h1 className="sectionText">Featured Reads</h1>
     <div className="featuredList">
 
      <div className="thumbnail">

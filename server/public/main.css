@@ -1,6 +1,6 @@
 html body{
   margin: 0;
-  background-color: rgb(250, 250, 250);
+  background-color: rgb(7, 7, 7);
 }
 
 
@@ -13,7 +13,7 @@ html body{
   height: 70px;
   width: 100%;
   z-index: 2;
-  background-color: rgba(255, 255, 255, 0.993);
+  background-color: rgba(32, 32, 32, 0.993);
 }
 
 .navBar {
@@ -33,7 +33,7 @@ html body{
 } 
 
 .sideBar {
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(19, 19, 19);
   width: 240px;
   height: 100%;
   position: fixed;
@@ -58,7 +58,6 @@ html body{
   margin-left: 25px;
   font-family: 'Source Serif Pro', serif;
   font-size: 13px;
-  color: rgb(61, 61, 61);
   cursor: default;
 }
 
@@ -81,11 +80,14 @@ html body{
   margin-top: 10px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: large;
+  background-color: black;
+  border-color: black;
+  color: rgb(206, 206, 206);
 }
 
 
 .searchButton {
-  background-color: rgb(231, 231, 231);
+  background-color: rgb(22, 22, 22);
   height: 26px;
   width: 40px;
   margin-top: 10px;
@@ -136,19 +138,22 @@ html body{
   font-family: 'Source Serif Pro', serif;
   font-weight: lighter;
   margin-left: 15px;
-  color: rgb(124, 124, 124);
+  color: rgb(175, 175, 175);
   white-space: nowrap;
   cursor: pointer;
 }
 
 .signupButton :hover {
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 .thumbnailImage img {
   width: 150px;
   height: auto;
   cursor: pointer;
+  border-color: rgba(126, 126, 126, 0.11);
+  border-style: solid;
+  border-width: 2px;
 }
 
 @media only screen and (min-width: 1180px) {
@@ -166,7 +171,7 @@ html body{
   font-family: 'Source Serif Pro', serif;
   font-weight: lighter;
   font-size: 25px;
-  color: rgb(41, 41, 41);
+  color: rgb(180, 180, 180);
   margin-top: -2px;
   cursor: default;
 }
@@ -194,6 +199,7 @@ html body{
   font-size: 15px;
   width: 150px;
   cursor: pointer;
+  color: rgb(163, 163, 163);
 }
 
 .thumbnailMeta {
@@ -203,6 +209,7 @@ html body{
   font-weight: lighter;
   width: 150px;
   margin-bottom: 20px;
+  color: rgb(163, 163, 163);
   cursor: pointer;
 }
 
@@ -220,6 +227,7 @@ html body{
   font-size: 15px;
   margin-top: 4px;
   margin-left: 7px;
+  color:  rgb(163, 163, 163);
 
 }
 
@@ -242,6 +250,7 @@ html body{
 
 .sideBarText {
   cursor: pointer;
+    color: rgb(168, 168, 168);
 }
 
 .sideBarText :hover {
@@ -264,6 +273,19 @@ html body{
   
 
 }
+
+@media only screen and (max-width: 1180px) {
+  .articleHeader img{
+   margin-top: -20px;
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+.articleHeaderAccountInfo {
+ margin-top: -20px;
+}
+}
+
 .articleHeader img {
   width: 80px;
   height: 80px;
@@ -292,6 +314,8 @@ user-select: none; /* Standard */
     position: fixed;
     justify-content: center;
     width: 100%;
+    height: 40px;
+    margin-top: -20px;
     -webkit-box-shadow: -1px 9px 24px -2px rgba(0,0,0,0.13);
 -moz-box-shadow: -1px 9px 24px -2px rgba(0,0,0,0.13);
 box-shadow: -1px 9px 24px -2px rgba(0,0,0,0.13);
@@ -417,11 +441,12 @@ user-select: none; /* Standard */
   width: 780px;
   margin-bottom: 5px;
   padding-top: 20px;
+  color: rgb(126, 126, 126);
 }
 
 @media only screen and (max-width: 1180px) {
   .articleTitle {
-    margin-top: 150px;
+    margin-top: 70px;
   }
 }
 
@@ -449,6 +474,7 @@ user-select: none; /* Standard */
   font-weight: lighter;
   text-align: start;
   margin-right: 30px;
+  color: rgb(126, 126, 126);
 }
 
 @media only screen and (max-width: 1180px) {
@@ -488,6 +514,12 @@ user-select: none; /* Standard */
 -moz-user-select: none; /* Firefox */
 -ms-user-select: none; /* IE10+/Edge */
 user-select: none; /* Standard */
+}
+
+@media only screen and (max-width: 1180px) {
+  .articleMeta {
+    margin-top: -20px;
+  }
 }
 
 @media only screen and (max-width: 1180px) {
@@ -697,18 +729,381 @@ cursor: pointer;
   margin-left: 250px;
 }
 
+.searchContentText {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-top: 100px;
+  font-weight: lighter;
+  margin-left: 20px;
+  color:  rgb(126, 126, 126);
+}
+
+.noResults{
+  display: flex;
+  width: 100%;
+  margin-top: 150px;
+  justify-content: center;
+}
+
+.noResults img{
+  width: 230px;
+  height: auto;
+  opacity: 50%;
+  margin-left: -100px;
+}
+
+.searchResultHR {
+  width: 600px;
+  height: 1px;
+  background-color: rgb(126, 126, 126);
+  margin-left: 100px;
+}
+
 .linkClass {
   text-decoration: none;
   color: rgb(61, 61, 61);
 }
 
 .profileHeader {
-  background-color: blue;
+  margin-left: 250px;
+  display: flex;
+  z-index: -1;
+  position: relative;
+}
+.profileHeader img {
+  object-fit: none;
   width: 100%;
   height: 240px;
   float: right;
 }
 
 .profileBanner {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 150px;
+  margin-top: -150px;
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(7, 7, 7, 0) 11%, rgb(7, 7, 7) 32%);
+}
+
+.profileBannerDisplay {
+  position: relative;
+  z-index: 1;
+  margin-left: 280px;
+  margin-top: -150px;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.profileBannerDisplay img{
+  border-radius: 50%;
+  height: 110px;
+  width: auto;
+
+}
+
+.profilePageName {
+  margin-top: 35px;
+  margin-left: 20px;
+  font-size: 40px;
+  font-weight: lighter;
+  color: rgb(126, 126, 126);
+}
+
+.profilePageDetails {
+  display: flex;
+  flex-direction: row;
+  margin-left: 40px;
+  margin-top: -30px;
+  color: rgb(126, 126, 126);
+}
+
+.profilePageDetailsText {
+  font-size: 15px;
+  margin-right: 20px;
+}
+
+.subButton {
+  margin-top: 60px;
+  margin-left: 50px;
+  background-color: rgb(114, 114, 114);
+  height: 23px;
+  display: flex;
+  justify-content: center;
+  width: 130px;
+  border-radius: 3px;
+  border-color: rgb(126, 126, 126);
+  border-style: solid;
+  border-width: .5px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 3px;
+  cursor: pointer;
+}
+
+.subButton :hover{
+  background-color: cornsilk;
+}
+
+.profileContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.profileMenu {
+  display: flex;
+  flex-direction: row;
+  margin-left: 300px;
+  position: relative;
+  margin-top: 230px;
+  position: absolute;
+  z-index: 1;
+  color: rgb(126, 126, 126);
+}
+
+.profileMenuText {
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 80px;
+  font-weight: lighter;
+}
+
+.profileHorizontal {
+  background-color: black;
+  width: 100%;
+  height: 1px;
+  margin-top: 280px;
+  margin-left: 300px;
+}
+
+.profileBody {
+  margin-left: 220px;
+  margin-top: 80px;
+}
+
+.hotTopicsMenu {
+  display: flex;
+  flex-direction: row;
+  margin-left: 40px;
+  margin-top: 90px;
+}
+
+.hotTopicsMenuDiv {
+  background-color: rgba(224, 224, 224, 0.527);
+  border-color: rgba(158, 158, 158, 0.452);
+  border-style: solid;
+  border-width: 1px;
+  margin-right: 9px;
+  border-radius: 15px;
+  width: fit-content;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: scroll;
+  cursor: pointer;
   
+}
+
+.publishBody {
+  margin-top: 200px;
+  width: 100%;
+  height: 100%;
+}
+
+.newPostMetaInput{
+  margin-left: 80px;
+  width: 50%;
+}
+
+.newPostContentInput{
+  margin-right: 80px;
+  width: 50%;
+}
+
+.newPostProfile {
+  width:  80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.newPostPage {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.newPostVL {
+  background-color: rgba(0, 0, 0, 0.308);
+  min-height: 500px;
+  margin-right: 20px;
+  margin-left: 20px;
+  width: 2px;
+}
+
+.contentTextInput{
+  width: 100%;
+  min-height: 100px;
+  border-radius: 3px;
+  font-size: 17px;
+  padding: 10px;
+  resize: vertical;
+}
+
+.contentTitleInput{
+  width: 90%;
+  margin-right: 20px;
+  height: 35px;
+  border-radius: 3px;
+  font-size: 30px;
+  padding: 10px;
+  resize: none;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.newPostHeader{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+  justify-content: center;
+  margin-left: -40px;
+}
+
+.newPostHeaderText{
+  font-weight: lighter;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.contentDescriptionInput{
+  width: 90%;
+  margin-right: 20px;
+  min-height: 100px;
+  border-radius: 3px;
+  font-size: 17px;
+  padding: 10px;
+  resize: vertical;
+  margin-bottom: 10px;
+}
+
+.contentTagsInput{
+  width: 90%;
+  min-height: 100px;
+  border-radius: 3px;
+  font-size: 17px;
+  padding: 10px;
+  resize: none;
+}
+
+.newPostH1{
+  font-weight: lighter;
+}
+
+.addToBookshelf {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 10px;
+
+}
+
+.bookshelfSelect {
+  background-color: rgba(204, 204, 204, 0);
+  width: 100px;
+  height: 30px;
+  margin-left: 5px;
+  border-radius: 3px;
+  border-style: solid;
+  border-color: gray;
+  border-width: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 10px;
+  color: rgb(87, 87, 87);
+  cursor: pointer;
+}
+
+.bookshelfSelect img {
+  margin-left: 10px;
+  width: 30px;
+  height: 15px;
+}
+
+.addToBookshelfText{
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+.signUpDiv{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  z-index: 4;
+  position: fixed;
+  width: 100%;
+  height:100%;
+  background-color: rgba(51, 51, 51, 0.788);
+  top: 0;
+}
+
+.signUpBox{
+  width: 800px;
+  height: 550px;
+  background-color: rgba(20, 20, 20, 0.993);
+  transform: translateY(10%);
+  border-radius: 2px;
+  box-shadow: 0px 0px 10px 0px rgba(56, 56, 56, 0.61);
+}
+
+.signUpDivCenter{
+  display: flex;
+  justify-content: center;
+}
+
+.signUpBoxContent{
+  display: flex;
+  justify-content: center;
+
+}
+
+.signUpTitle{
+  color: white;
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+.signUpHeader{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.signUpHeader img{
+  width: 150px;
+  height: 70px;
+  margin-right: 90px;
+  margin-top: 25px;
+  float: left;
+}
+
+.signUpForm{
+  display: flex;
+  flex-direction: column;
+}
+
+.signUpInput{
+  height: 20px;
+  font-size: 17px;
+}
+
+.signUpandSignin{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }

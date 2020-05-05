@@ -2,8 +2,13 @@ const path = require('path')
 const express = require('express')
 
 const server = express()
+module.exports = server
+
+const routes = require('./routes')
 
 server.use(express.json())
 server.use(express.static(path.join(__dirname, './public')))
 
-module.exports = server
+server.use('/', routes)
+server.use('/articles', routes)
+
