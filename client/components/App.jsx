@@ -12,19 +12,22 @@ import SearchPage from './Searchpage'
 import ProfilePage from './Profile'
 import HotTopics from './HotTopics'
 import NewPost from './NewPost'
-import Signup from './Signup'
+// import Signup from './Signup'
+
+
 
 const App = () => {
   return (
     <>
-    <Route exact path="/" component={Signup} />
+    {/* <ProfilePage name="benny balloon" /> */}
+    {/* <Route exact path="/" component={Signup} /> */}
     <Route exact path="/" component={Sidebar} />
     <Route path="/" component={Header} />
 
      <div className="bodyContent">
        <Route exact path="/" component={HotTopics} />
     <Route exact path="/" component={Featured} />
-    <Route exact path="/" component={Foryou} />
+    {/* <Route exact path="/" component={<Foryou name="silly billy"/>} /> */}
     <Route exact path="/" component={Featured} />
     <Route exact path="/" component={Foryou} />
     <Route exact path="/" component={Featured} />

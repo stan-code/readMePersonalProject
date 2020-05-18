@@ -9,6 +9,5 @@ const routes = require('./routes')
 server.use(express.json())
 server.use(express.static(path.join(__dirname, './public')))
 
-server.use('/', routes)
-server.use('/articles', routes)
+server.use('/api/v1/articles', routes)
 

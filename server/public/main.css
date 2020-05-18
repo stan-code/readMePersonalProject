@@ -1107,3 +1107,8 @@ cursor: pointer;
   flex-direction: row;
   justify-content: center;
 }
+
+.thumbnaiImage{
+  width: 100px;
+  height: 200px;
+}
