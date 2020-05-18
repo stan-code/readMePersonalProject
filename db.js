@@ -3,7 +3,9 @@ const config = require('./knexfile')[environment]
 const connection = require('knex')(config)
 
 module.exports = {
-  getPosts
+  getPosts,
+  getForYou,
+  postArticle
 }
 
 
@@ -12,3 +14,17 @@ function getPosts(testDb) {
   return db('articles').select()
 
 }
+
+function getForYou(testDb) {
+  const db = testDb || connection
+  return db('articles').select()
+
+}
+
+function postArticle(testDb) {
+  const db = testDb || connection
+  return db('articles').select()
+}
+
+
+

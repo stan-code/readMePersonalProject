@@ -8,6 +8,8 @@ exports.seed = (knex, Promise) => {
         {articleId: 1, title: 'My Cool Article', author: 'Archie B Coroli', thumbnailImage: './images/thumbnail.png'},
         {articleId: 2, title: 'My Great Article', author: 'Brandom C Danger', thumbnailImage: './images/thumbnail.png'},
         {articleId: 3, title: 'My Amazing Article', author: 'Claire D English', thumbnailImage: './images/thumbnail.png'},
+        { articleId: 4, title: 'My Amazing Article', author: 'Claire D English', thumbnailImage: './images/thumbnail.png' },
+        { articleId: 5, title: 'My Amazing Article', author: 'Claire D English', thumbnailImage: './images/thumbnail.png' }
       ]);
     });
 };

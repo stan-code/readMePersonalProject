@@ -8,9 +8,9 @@ class Thumbnail extends React.Component {
       
           <div className="thumbnail">
             <div className="thumbnailContent">
-              <div className="thumbnailImage">
+            <div>
                 <Link to={`/Article/${this.props.id}`}>
-                <div class="thumbnaiImage"><img src={this.props.thumbnailImage} /></div>
+                <div class="thumbnailImage"><img src={this.props.thumbnailImage} /></div>
                 </Link>
               </div>
               <div className="profileTag">

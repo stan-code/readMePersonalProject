@@ -5,8 +5,11 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'server/public'),
     filename: 'bundle.js',
-    default: '/'
   },
+  devServer: {
+    historyApiFallback: true
+  },
+  
   mode: 'development',
   module: {
     rules: [{
@@ -21,5 +24,5 @@ module.exports = {
   devtool: 'source-map',
   devServer: {
     contentBase: './server/public'
-  }
+  },
 }

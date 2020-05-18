@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import Thumbnail from './thumbnail'
+import request from 'superagent'
 
 class Foryou extends React.Component {
     state = {
@@ -25,6 +26,19 @@ class Foryou extends React.Component {
       }
 
       ]
+  }
+
+  componentDidMount(){
+    request.get('/api/v1/Articles')
+    .then(res => {
+      this.setState(
+        {
+          articles: res.body
+        }
+      )
+      console.log(res.body)
+    })
+
   }
 
   render(){

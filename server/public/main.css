@@ -1108,7 +1108,7 @@ cursor: pointer;
   justify-content: center;
 }
 
-.thumbnaiImage{
+.thumbnaiImage img{
   width: 100px;
   height: 200px;
 }

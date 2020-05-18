@@ -13,4 +13,20 @@ router.get('/', (req, res) => {
     })
 })
 
+
+router.post('/', (req, res) => {
+  postContent = {
+    title: req.body.title,
+    author: req.body.author,
+    thumbnailImage: req.body.thumbnailImage
+  }
+  db.postArticle(postContent)
+    .then(() => {
+      res.status(201).send()
+    })
+    .catch(err => {
+      res.status(500).send('Uh Oh, something went wrong' + err.message)
+    })
+})
+
 module.exports = router
