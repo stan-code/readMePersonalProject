@@ -44,14 +44,16 @@ class Foryou extends React.Component {
   render(){
   return (
     <>
+      <div className="featuredList">
       <div className="featuredContent">
         <hr className="homeHr"></hr>
-        <h1 className="sectionText">Hi</h1>
+        <h1 className="sectionText">For You</h1>
         <div className="featuredList">
           <ul className="featuredList">{this.state.articles.map(article => {
-            return<Thumbnail key={article.id} thumbnailImage={article.thumbnailImage} author={article.author} title={article.title} id={article.id}/>
+            return <Thumbnail key={article.articleId} thumbnailImage={article.thumbnailImage} author={article.author} title={article.title} id={article.articleId} />
           })}</ul>
         </div>
+      </div>
       </div>
     </>
   );

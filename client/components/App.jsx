@@ -26,13 +26,13 @@ const App = () => {
 
      <div className="bodyContent">
        <Route exact path="/" component={HotTopics} />
-    <Route exact path="/" component={Featured} />
+    {/* <Route exact path="/" component={Featured} /> */}
     {/* <Route exact path="/" component={<Foryou name="silly billy"/>} /> */}
-    <Route exact path="/" component={Featured} />
+    {/* <Route exact path="/" component={Featured} /> */}
     <Route exact path="/" component={Foryou} />
-    <Route exact path="/" component={Featured} />
+    {/* <Route exact path="/" component={Featured} /> */}
     <Route exact path="/" component={Foryou} />
-    <Route exact path="/" component={Featured} />
+    {/* <Route exact path="/" component={Featured} /> */}
     </div>
 
     <Route exact path="/Search" component={SearchPage} />
