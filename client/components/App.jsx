@@ -49,18 +49,18 @@ const App = () => {
     <div className="articleBodyContent">
       <div className="articleBackground">
       <div className="articleContentDivison">
-      <Route exact path="/Article" component={Article} />
-      <Route exact path="/Article" component={Comments} />
+      <Route path="/article" component={Article} />
+      <Route path="/article" component={Comments} />
       </div>
     
       <div className="articleSidebarApp">
-      <Route exact path="/Article" component={ArticleSidebar} />
+      <Route path="/article" component={ArticleSidebar} />
       </div>
       </div>
     </div>
 
     <div className="publishBody">
-    <Route exact path="/Publish" component={NewPost} />
+    <Route path="/Publish" component={NewPost} />
     </div>
 
     </>

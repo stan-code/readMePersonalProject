@@ -9,7 +9,7 @@ class Thumbnail extends React.Component {
           <div className="thumbnail">
             <div className="thumbnailContent">
             <div>
-                <Link to={`/Article/${this.props.id}`}>
+                <Link to={`/article/${this.props.id}`}>
                 <div class="thumbnailImage"><img src={this.props.thumbnailImage} /></div>
                 </Link>
               </div>

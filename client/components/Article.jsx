@@ -1,19 +1,47 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-const data = {
-  username: 'Yippee Land'
-}
 
-// function returnUsername (props) {
-//   console.log (
-//     <h1 className="articleHeaderAccountName">{props.username}</h1>
-//   )
-// }
+class Article extends React.Component {
+  state = {
+    articles: [
+      {
+        id: 1,
+        thumbnailImage: "/images/beyond.png",
+        author: "Grace",
+        title: "BTT"
+      },
+      {
+        id: 2,
+        thumbnailImage: "/images/bezos.png",
+        author: "Jeff",
+        title: "Amazon"
+      },
+      {
+        thumbnailImage: "/images/corona.png",
+        id: 3,
+        author: "Virus",
+        title: "Covid"
+      }
 
-// returnUsername()
+    ]
+  }
 
-const Article = () => {
+
+  // componentDidMount() {
+  //   request.get('/api/v1/Articles/')
+  //     .then(res => {
+  //       this.setState(
+  //         {
+  //           articles: res.body
+  //         }
+  //       )
+  //       console.log(res.body)
+  //     })
+
+  // }
+
+  render() {
   return(
   <>
   <div className="articleHeader">
@@ -22,7 +50,7 @@ const Article = () => {
 <img src="images/dp.png" draggable="false"/>
 </Link>
 <div className="articleHeaderAccountInfo">
-<h1 className="articleHeaderAccountName">Discover World</h1> 
+<h1 className="articleHeaderAccountName">name</h1> 
 <h2 className="articleHeaderSubCount">25M subscribers</h2>
 </div>
 <div className="articleMeta">
@@ -72,6 +100,7 @@ Nulla dapibus facilisis dolor malesuada lobortis. Integer euismod, sapien ut com
 </div>
   </>
   )
+  }
 }
 
 export default Article
